@@ -5,7 +5,6 @@ import tkinter
 from tkinter import *
 
 window = Tk()
-# x başlar
 
 window.geometry("556x432")
 
