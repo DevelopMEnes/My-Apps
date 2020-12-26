@@ -30,7 +30,6 @@ function getTodolistFromLocal() {
             const isActive = todo.toString().slice(todoLength - 5, todoLength);
 
             todolist.push({ todo: todoData, isActive: isActive }); //todo:find simple solution here nested conditon
-            console.log(isActive);
         }
         i++;
     }
@@ -51,7 +50,6 @@ function addTodo() {
     }
     const todoListLengthString = todolist.length.toString();
     localStorage.setItem(todoListLengthString, todo + " true");
-    console.log(localStorage.getItem(todolist.length.toString()));
     todolist.push({ todo: todo, isActive: " true" });
     todoInput.value = "";
     showTodolist();
